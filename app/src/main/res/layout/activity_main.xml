@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/score_board"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintEnd_toEndOF="parent"
+            tools:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/player1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player1_score"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/player2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2_score"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn00"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+
+        <ImageButton
+            android:id="@+id/btn01"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+
+        <ImageButton
+            android:id="@+id/btn02"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn10"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+
+        <ImageButton
+            android:id="@+id/btn11"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+        <ImageButton
+            android:id="@+id/btn12"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn20"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+
+        <ImageButton
+            android:id="@+id/btn21"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+
+        <ImageButton
+            android:id="@+id/btn22"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp">
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_game"
+            android:background="@android:color/background_light"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/layout_margin"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <!--android:text="@string/multiplayer"-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Switch
+            android:id="@+id/switchMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/layout_margin"
+            android:switchPadding="5dp"
+            android:text="@string/multiplayer"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:trackTint="@color/graySwitch"/>
+    </LinearLayout>
+
+</LinearLayout>
